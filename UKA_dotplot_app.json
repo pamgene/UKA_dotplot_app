@@ -20,7 +20,13 @@
  },
  "urls": [],
  "tags": [],
- "meta": [],
+ "meta": [
+  {
+   "kind": "Pair",
+   "key": "PUBLISHED",
+   "value": "true"
+  }
+ ],
  "url": {
   "kind": "Url",
   "uri": ""
@@ -32,26 +38,20 @@
  "links": [
   {
    "kind": "Link",
-   "id": "92429d3d-4178-43db-8b1c-46582b44f104",
+   "id": "ebe493e8-9639-43b6-807b-5718e851519a",
    "inputId": "3652406b-1f95-4b7e-b623-c224e77d98c5-i-0",
    "outputId": "2d9771e9-62f4-4aa8-9ab9-3c05383a1fd2-o-0"
   },
   {
    "kind": "Link",
-   "id": "11c65be5-660b-4e17-b0af-0e522a2b34d7",
-   "inputId": "7f4591b5-d8b0-45ee-b05a-c30fb80e2419-i-0",
-   "outputId": "9efa1332-efa7-40f6-9752-c26f830da7d2-o-0"
-  },
-  {
-   "kind": "Link",
-   "id": "451d3abb-6e90-4be9-97f8-2d7b5ca16856",
+   "id": "a2e644d6-e197-4cac-91b4-a36e4b1a777b",
    "inputId": "2d9771e9-62f4-4aa8-9ab9-3c05383a1fd2-i-0",
-   "outputId": "7f4591b5-d8b0-45ee-b05a-c30fb80e2419-o-0"
+   "outputId": "d605c14f-3d0d-439e-bb67-a59d838ea877-o-0"
   },
   {
    "kind": "Link",
-   "id": "199afc3b-8682-4551-87b7-97882a0b06f0",
-   "inputId": "51db233e-e771-45f6-a52f-b14ae2250973-i-0",
+   "id": "20c9baff-c2a0-46da-8de3-6b4901a8064d",
+   "inputId": "3e881535-805f-4cce-a405-49239fefe514-i-0",
    "outputId": "3652406b-1f95-4b7e-b623-c224e77d98c5-o-0"
   }
  ],
@@ -87,7 +87,7 @@
     "topLeft": {
      "kind": "Point",
      "x": 708.8790740966797,
-     "y": 329.5
+     "y": 284.5
     }
    },
    "state": {
@@ -134,12 +134,12 @@
           {
            "kind": "DoubleColorElement",
            "color": -1,
-           "stringValue": "-82.912170744386"
+           "stringValue": "-51.22342080264521"
           },
           {
            "kind": "DoubleColorElement",
            "color": -1,
-           "stringValue": "23.719301826344356"
+           "stringValue": "56.115074508902154"
           }
          ]
         }
@@ -265,17 +265,17 @@
         {
          "kind": "FilterExpr",
          "filterOp": "greater",
-         "stringValue": "1.3",
+         "stringValue": "1.5",
          "factor": {
           "kind": "Factor",
-          "name": "UKA.Median Final score",
+          "name": "Median Final score",
           "type": "double"
          },
          "preProcessors": []
         }
        ],
        "meta": [],
-       "name": "UKA.Median Final score"
+       "name": "Median Final score"
       }
      ]
     },
@@ -390,13 +390,13 @@
       }
      ],
      "rectangleSelections": [],
-     "nRows": 19
+     "nRows": 18
     },
     "taskId": ""
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "b894fd7f-f689-4ff9-a694-059ae4e62998"
+    "id": "f7d0bf21-b619-4cd4-b0da-98779682ed7c"
    },
    "parentDataStepId": ""
   },
@@ -430,8 +430,8 @@
     },
     "topLeft": {
      "kind": "Point",
-     "x": 726.505,
-     "y": 162.5
+     "x": 727.505,
+     "y": 161.5
     }
    },
    "state": {
@@ -452,18 +452,12 @@
       "kind": "MappingFactor",
       "name": "Mean Specificity Score",
       "type": "double",
-      "description": "Dot size",
+      "description": "Select the factor that defines the dot size.\n\nExample:\n* Mean specificity score",
       "ontologyMapping": "",
       "crosstabMapping": "",
       "cardinality": "",
-      "factors": [
-       {
-        "kind": "Factor",
-        "name": "Mean Specificity Score",
-        "type": "double"
-       }
-      ],
-      "factorName": "Mean Specificity Score",
+      "factors": [],
+      "factorName": "Dot size",
       "isSingle": true,
       "isRequired": true
      },
@@ -471,17 +465,11 @@
       "kind": "MappingFactor",
       "name": "Kinase Name",
       "type": "string",
-      "description": "",
+      "description": "Select the factor that defines the kinase name.\n\nExample:\n* Kinase Name",
       "ontologyMapping": "",
       "crosstabMapping": "",
       "cardinality": "",
-      "factors": [
-       {
-        "kind": "Factor",
-        "name": "Kinase Name",
-        "type": "string"
-       }
-      ],
+      "factors": [],
       "factorName": "Kinase Name",
       "isSingle": true,
       "isRequired": true
@@ -490,17 +478,11 @@
       "kind": "MappingFactor",
       "name": "Kinase Family",
       "type": "string",
-      "description": "",
+      "description": "Select a factor defining the Kinase Family or other grouping of kinases. \n\nExample:\n* Kinase Family \n* Kinase Group",
       "ontologyMapping": "",
       "crosstabMapping": "",
       "cardinality": "",
-      "factors": [
-       {
-        "kind": "Factor",
-        "name": "Kinase Family",
-        "type": "string"
-       }
-      ],
+      "factors": [],
       "factorName": "Kinase Family",
       "isSingle": false,
       "isRequired": true
@@ -513,61 +495,37 @@
       "ontologyMapping": "",
       "crosstabMapping": "",
       "cardinality": "",
-      "factors": [
-       {
-        "kind": "Factor",
-        "name": "Sgroup_contrast",
-        "type": "string"
-       }
-      ],
-      "factorName": "Sgroup_contrast",
+      "factors": [],
+      "factorName": "Comparison",
       "isSingle": false,
-      "isRequired": false
+      "isRequired": true
      },
      {
       "kind": "MappingFactor",
       "name": "Median Kinase Statistic",
       "type": "double",
-      "description": "",
+      "description": "Select the factor that defines the fold change. E.g. Median Kinase Statistic, Median Kinase Change",
       "ontologyMapping": "",
       "crosstabMapping": "",
       "cardinality": "",
-      "factors": [
-       {
-        "kind": "Factor",
-        "name": "Median Kinase Statistic",
-        "type": "double"
-       }
-      ],
-      "factorName": "Median Kinase Statistic",
+      "factors": [],
+      "factorName": "Fold Change",
       "isSingle": false,
-      "isRequired": false
+      "isRequired": true
      }
     ],
     "filters": [
      {
       "kind": "MappingFilter",
-      "name": "UKA.Median Final score",
-      "description": "",
+      "name": "Median Final score",
+      "description": "Filter for significant hits. E.g. Median Final score, Mean Specificity Score, Median Kinase Statistic.",
       "namedFilter": {
        "kind": "NamedFilter",
        "logical": "and",
        "not": false,
-       "filterExprs": [
-        {
-         "kind": "FilterExpr",
-         "filterOp": "greater",
-         "stringValue": "1.3",
-         "factor": {
-          "kind": "Factor",
-          "name": "UKA.Median Final score",
-          "type": "double"
-         },
-         "preProcessors": []
-        }
-       ],
+       "filterExprs": [],
        "meta": [],
-       "name": "UKA.Median Final score"
+       "name": "Significance filter"
       },
       "isRequired": false
      }
@@ -578,7 +536,7 @@
       "kind": "MappingFactor",
       "name": "Mean Specificity Score",
       "type": "double",
-      "description": "Dot size",
+      "description": "Select the factor that defines the dot size.\n\nExample:\n* Mean specificity score",
       "ontologyMapping": "",
       "crosstabMapping": "",
       "cardinality": "",
@@ -589,7 +547,7 @@
         "type": "double"
        }
       ],
-      "factorName": "Mean Specificity Score",
+      "factorName": "Dot size",
       "isSingle": true,
       "isRequired": true
      },
@@ -597,7 +555,7 @@
       "kind": "MappingFactor",
       "name": "Kinase Name",
       "type": "string",
-      "description": "",
+      "description": "Select the factor that defines the kinase name.\n\nExample:\n* Kinase Name",
       "ontologyMapping": "",
       "crosstabMapping": "",
       "cardinality": "",
@@ -616,7 +574,7 @@
       "kind": "MappingFactor",
       "name": "Kinase Family",
       "type": "string",
-      "description": "",
+      "description": "Select a factor defining the Kinase Family or other grouping of kinases. \n\nExample:\n* Kinase Family \n* Kinase Group",
       "ontologyMapping": "",
       "crosstabMapping": "",
       "cardinality": "",
@@ -654,7 +612,7 @@
       "kind": "MappingFactor",
       "name": "Median Kinase Statistic",
       "type": "double",
-      "description": "",
+      "description": "Select the factor that defines the fold change. E.g. Median Kinase Statistic, Median Kinase Change",
       "ontologyMapping": "",
       "crosstabMapping": "",
       "cardinality": "",
@@ -665,7 +623,7 @@
         "type": "double"
        }
       ],
-      "factorName": "Median Kinase Statistic",
+      "factorName": "Fold Change",
       "isSingle": false,
       "isRequired": false
      }
@@ -702,13 +660,13 @@
   },
   {
    "kind": "InStep",
-   "id": "7f4591b5-d8b0-45ee-b05a-c30fb80e2419",
+   "id": "d605c14f-3d0d-439e-bb67-a59d838ea877",
    "groupId": "",
    "name": "Input",
    "inputs": [
     {
      "kind": "InputPort",
-     "id": "7f4591b5-d8b0-45ee-b05a-c30fb80e2419-i-0",
+     "id": "d605c14f-3d0d-439e-bb67-a59d838ea877-i-0",
      "linkType": "any",
      "name": "from"
     }
@@ -716,7 +674,7 @@
    "outputs": [
     {
      "kind": "OutputPort",
-     "id": "7f4591b5-d8b0-45ee-b05a-c30fb80e2419-o-0",
+     "id": "d605c14f-3d0d-439e-bb67-a59d838ea877-o-0",
      "linkType": "any",
      "name": "to"
     }
@@ -730,8 +688,8 @@
     },
     "topLeft": {
      "kind": "Point",
-     "x": 729.0,
-     "y": 52.0
+     "x": 751.505,
+     "y": 46.5
     }
    },
    "state": {
@@ -750,13 +708,13 @@
   },
   {
    "kind": "ViewStep",
-   "id": "51db233e-e771-45f6-a52f-b14ae2250973",
+   "id": "3e881535-805f-4cce-a405-49239fefe514",
    "groupId": "",
    "name": "View",
    "inputs": [
     {
      "kind": "InputPort",
-     "id": "51db233e-e771-45f6-a52f-b14ae2250973-i-0",
+     "id": "3e881535-805f-4cce-a405-49239fefe514-i-0",
      "linkType": "any",
      "name": "in"
     }
@@ -772,7 +730,7 @@
     "topLeft": {
      "kind": "Point",
      "x": 725.505,
-     "y": 414.5
+     "y": 369.5
     }
    },
    "state": {
