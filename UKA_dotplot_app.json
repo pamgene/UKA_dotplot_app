@@ -450,7 +450,7 @@
     "factors": [
      {
       "kind": "MappingFactor",
-      "name": "Mean Specificity Score",
+      "name": "Dot size",
       "type": "double",
       "description": "Select the factor that defines the dot size.\n\nExample:\n* Mean specificity score",
       "ontologyMapping": "",
@@ -489,7 +489,7 @@
      },
      {
       "kind": "MappingFactor",
-      "name": "Sgroup_contrast",
+      "name": "Comparison",
       "type": "string",
       "description": "Comparison",
       "ontologyMapping": "",
@@ -502,7 +502,7 @@
      },
      {
       "kind": "MappingFactor",
-      "name": "Median Kinase Statistic",
+      "name": "Fold Change",
       "type": "double",
       "description": "Select the factor that defines the fold change. E.g. Median Kinase Statistic, Median Kinase Change",
       "ontologyMapping": "",
@@ -517,7 +517,7 @@
     "filters": [
      {
       "kind": "MappingFilter",
-      "name": "Median Final score",
+      "name": "Significance filter",
       "description": "Filter for significant hits. E.g. Median Final score, Mean Specificity Score, Median Kinase Statistic.",
       "namedFilter": {
        "kind": "NamedFilter",
@@ -534,7 +534,7 @@
     "defaultFactors": [
      {
       "kind": "MappingFactor",
-      "name": "Mean Specificity Score",
+      "name": "Dot size",
       "type": "double",
       "description": "Select the factor that defines the dot size.\n\nExample:\n* Mean specificity score",
       "ontologyMapping": "",
@@ -591,7 +591,7 @@
      },
      {
       "kind": "MappingFactor",
-      "name": "Sgroup_contrast",
+      "name": "Comparison",
       "type": "string",
       "description": "Comparison",
       "ontologyMapping": "",
@@ -604,13 +604,13 @@
         "type": "string"
        }
       ],
-      "factorName": "Sgroup_contrast",
+      "factorName": "Comparison",
       "isSingle": false,
       "isRequired": false
      },
      {
       "kind": "MappingFactor",
-      "name": "Median Kinase Statistic",
+      "name": "Fold Change",
       "type": "double",
       "description": "Select the factor that defines the fold change. E.g. Median Kinase Statistic, Median Kinase Change",
       "ontologyMapping": "",
@@ -631,7 +631,7 @@
     "defaultFilters": [
      {
       "kind": "MappingFilter",
-      "name": "UKA.Median Final score",
+      "name": "Significance filter",
       "description": "",
       "namedFilter": {
        "kind": "NamedFilter",
@@ -651,7 +651,7 @@
         }
        ],
        "meta": [],
-       "name": "UKA.Median Final score"
+       "name": "Significance filter"
       },
       "isRequired": false
      }
